@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .navbar{
     display: flex;
     align-items: center;
@@ -56,9 +57,10 @@
     border-radius: 20px;
     text-decoration: none;
 }
-.navbar ul li a:hover{
+.navbar ul li a:hover, .navbar ul li a.visited{
     color: black;
     background-color: white;
+    transition: 0.5s;
 }
 .navbar button{
     position: relative;
@@ -88,7 +90,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url('/imgaes/bg.jpeg') no-repeat center center/cover;
+    background: url('../images/bg.jpeg') no-repeat center center/cover;
     height: 560px;
     width: 100%;
     z-index: -1;
@@ -97,7 +99,7 @@
 .home h1{
     color: rgb(0 255 43);
     text-align: center;
-    text-shadow: 5px 2px white;
+    text-shadow: 2px 0px white;
     font-size: 4rem;
 }
 .home p{
@@ -263,6 +265,8 @@ footer{
         text-align: center;
         text-shadow: 5px 2px white;
         font-size: 2rem;
+        text-shadow: 3px 1px white;
+        font-weight: 550;
     }
     .home p{
         color: beige;

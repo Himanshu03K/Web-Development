@@ -1,79 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RS Book Supplier</title>
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC|Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="./images/logo.jpeg" alt="RS Book Supplier">
-            <div>RS Book Supplier</div>
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="./images/Screenshot (8).png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#resources">resources</a>
+            <a href="#videos">videos</a>
+            <a href="#job">job</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
         </div>
-        <ul>
-            <li><a href="#home" class="current dropdown">Home</a></li>
-            <li><a href="#about" class="dropdown">About Us</a></li>
-            <li><a href="#school" class="dropdown">School</a></li>
-            <li><a href="#contact" class="dropdown">Contact Us</a></li>
-        </ul>
-        <button><input type="text" value="Enter to search"></button>
-    </nav>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+    </header>
 
     <section class="home" id="home">
-        <h1 class="welcome">Welcome to RS Book Supplier</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam sit dolorum, sed deserunt perferendis fugit corporis impedit.</p>
+
+        <div class="content">
+            <h2>Teachers open the door, but you must <span>enter by yourself.</span></h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio
+                tempora reiciendis.</p>
+            <a href="#" class="btn">subscribe us</a>
+        </div>
+
     </section>
 
-    <section class="aboutus-container" id="about">
-        <h1>About Us</h1>
-        <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam aperiam, delectus ea esse non, quasi sint temporibus neque ipsum, fugit asperiores ex minus veritatis enim omnis culpa voluptate quaerat debitis repellat necessitatibus deserunt sit labore. Quaerat dignissimos corrupti, debitis quo saepe non laborum consequuntur aut? Repudiandae itaque veritatis praesentium libero?</p>
-        <br>
-        <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam aperiam, delectus ea esse non, quasi sint temporibus neque ipsum, fugit asperiores ex minus veritatis enim omnis culpa voluptate quaerat debitis repellat necessitatibus deserunt sit labore. Quaerat dignissimos corrupti, debitis quo saepe non laborum consequuntur aut? Repudiandae itaque veritatis praesentium libero? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nisi consectetur dolorum ipsam doloremque vitae assumenda quam molestias? Commodi rerum unde dicta eum possimus incidunt saepe harum placeat minus! Id.</p>
-    </section>
-    
-    <section class="school-container" id="school">
-        <h1>School</h1>
-        <div class="school">
-            <div class="box">
-                <img src="./images/ramanlal.png" alt="Ramanlal">
-                <h2>Ramanlal Shorawala Public School</h2>
+    <section class="card-section">
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Data Structures</h3>
+                </div>
+                <div class="back">
+                    <h3>Data Structures</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1cmSWUeoUhS_FZ-bgi1ytXO0P40LZ66lR?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <img src="./images/ramanlal.png" alt="Ramanlal">
-                <h2>Ramanlal Shorawala Public School</h2>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Discrete Maths</h3>
+                </div>
+                <div class="back">
+                    <h3>Discrete Maths</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/10kIB_hxW9ydIZZtuyTk9PQdLly-Lr5Z4?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div class="box">
-                <img src="./images/ramanlal.png" alt="Ramanlal">
-                <h2>Ramanlal Shorawala Public School</h2>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Microprocessor</h3>
+                </div>
+                <div class="back">
+                    <h3>Microprocessor</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1QPeog-qdTySEwKkXAG0bIwrtpVslcGW-?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Database Management System</h3>
+                </div>
+                <div class="back">
+                    <h3>Database Management System</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1ypcLTIOhxW0nVGwNPc2uh5oSZBgHM54x?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Computer Network</h3>
+                </div>
+                <div class="back">
+                    <h3>Computer Network</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1xfYn5nzV_LUFdE-NMqxyj7_eGJ99AV-u?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Computer Organisation</h3>
+                </div>
+                <div class="back">
+                    <h3>Computer Organisation</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1M0oPvG32WCjL5JBhh_AnlA2EZ0BrRRV2?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Java</h3>
+                </div>
+                <div class="back">
+                    <h3>Java</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1vP-hYKN-52C_-0oeqDISkElJ3q70LKDq?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Operating System</h3>
+                </div>
+                <div class="back">
+                    <h3>Operating System</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1H_WyfaJ34pyws6p4us0gXEOLLEOG1rV2?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <div class="img"></div>
+                    <h3>Software Engineering</h3>
+                </div>
+                <div class="back">
+                    <h3>Software Engineering</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At quidem dolore nisi velit.</p>
+                    <div class="btn"> 
+                        <a href="https://drive.google.com/drive/folders/1n8-LdBEOj7yhXTqJKZRn61Z1VVONaz7p?usp=share_link" target="_blank">Learn More</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="contactus-container" id="contact">
-        <h1>Contact Us</h1>
-        <div class="contact">
-            <div class="bottom-logo">
-                <img src="./images/logo.jpeg" alt="RS Book Supplier">
-                <div>RS Book Supplier</div>
-            </div>
-            <div class="connect">
-                <h2>Connect with us</h2>
-                <ul>
-                    <li><a href="https://wa.me/" target="_blank"><img id="whatsapp"
-                                src="https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg" alt=""></a></li>
-                    <li><a href="mailto: rsbooksupplier@gmail.com" target="_blank"><img id="email"
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7aUKt9aEoCWicnwalrfp1b5X_1wtw1rrwIw&usqp=CAU"
-                                alt=""></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="center">Copyright &copy; www.rsbooksupplier.com</div>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>

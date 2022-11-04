@@ -256,6 +256,10 @@ html{
         padding:1.5rem 2rem;
     }
 
+    .home{
+        min-height: 70vh;
+    }
+
     section{
         padding:2rem;
     }
@@ -315,6 +319,10 @@ html{
 
     html{
         font-size: 42%;
+    }
+
+    .home{
+        min-height: 60vh;
     }
 
     .home .content span{

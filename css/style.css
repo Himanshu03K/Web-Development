@@ -402,6 +402,12 @@ html{
     font-weight: bolder;
 }
 
+#load-more-btn{
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+}
+
 
 
 

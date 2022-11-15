@@ -1,155 +1,167 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
-    <link rel="stylesheet" href="style.css">
-    <!-- Boxiocns CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider Carousel Version 1</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-  <div class="sidebar close">
-    <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">Futune Maker</span>
-    </div>
-    <ul class="nav-links">
-      <li>
-        <!-- <a href="#">
-          <i class='bx bx-grid-alt' ></i>
-          <span class="link_name">Dashboard</span>
-        </a> -->
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Category</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-collection' ></i>
-            <span class="link_name">Learning Subject</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
+
+    
+  <div class="container">
+    
+
+    
+    <div id="DSA">
+      <input type="radio" name="slider" class="d-none" id="s1" checked>
+    <input type="radio" name="slider" class="d-none" id="s2">
+    <input type="radio" name="slider" class="d-none" id="s3">
+    <input type="radio" name="slider" class="d-none" id="s4">
+    <input type="radio" name="slider" class="d-none" id="s5">
+    
+    <h1>DSA</h1>
+    <div class="cards">
+      <label for="s1" id="slide1">
+        <div class="card">
+          <div class="image">
+            <img src="img/Anuj Bhaiya.jpg" alt="">
+            <div class="dots">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Anuj Bhaiya</span>
+            <span class="lorem">Lorem ipsum dolor sit amet, sit amet  adipiscing elit. Aenean vel ansd . Nullam
+              lorem. Nulla eu
+              sodales</span>
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
         </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Learning Subject</a></li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">PHP & MySQL</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-book-alt' ></i>
-            <span class="link_name">Theory Subjects</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
+      </label>
+
+      <label for="s2" id="slide2">
+        <div class="card">
+          <div class="image">
+            <img src="img/unnamed.jpg" alt="">
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Apni Kaksha</span>
+            <span class="lorem">Lorem ipsum dolor sit, adipiscing elit. Aenean vel sit ansd . Nullam
+              lorem. Nulla eu
+              sodales karma stellus</span>
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
         </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Theory Subjects</a></li>
-          <li><a href="#">Computer Networks</a></li>
-          <li><a href="#">DataBAse Management System</a></li>
-          <li><a href="#">Physics</a></li>
-          <li><a href="#">Chemistry</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-pie-chart-alt-2' ></i>
-          <span class="link_name">Analytics</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Analytics</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-line-chart' ></i>
-          <span class="link_name">Chart</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Chart</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-plug' ></i>
-            <span class="link_name">Plugins</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
+      </label>
+
+      <label for="s3" id="slide3">
+        <div class="card">
+          <div class="image">
+            <img src="img/Anuj Bhaiya.jpg" alt="">
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Black Toe Union</span>
+            <span class="lorem">Lorem ipsum dolor, sit amet let kar adipiscing. Aenean vel velit sit ansd . Nullam
+              lorem. Nulla karma stellus</span>
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
         </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Plugins</a></li>
-          <li><a href="#">UI Face</a></li>
-          <li><a href="#">Pigments</a></li>
-          <li><a href="#">Box Icons</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-compass' ></i>
-          <span class="link_name">Explore</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Explore</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-history'></i>
-          <span class="link_name">History</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">History</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-cog' ></i>
-          <span class="link_name">Setting</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Setting</a></li>
-        </ul>
-      </li>
-      <li>
-    <div class="profile-details">
-      <div class="profile-content">
-        <!--<img src="image/profile.jpg" alt="profileImg">-->
-      </div>
-      <div class="name-job">
-        <div class="profile_name">Himanshu Kushwaha</div>
-        <div class="job">Web Developer</div>
-      </div>
-      <i class='bx bx-log-out' ></i>
+      </label>
+
+      <label for="s4" id="slide4">
+        <div class="card">
+          <div class="image">
+            <img src="img/Anuj Bhaiya.jpg" alt="">
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Retro High Og</span>
+            <span class="lorem">Lorem ipsum dolor sit, sit amet elit. Aenean sit amet sit amet vel velit sit ansd. Nulla eu
+              sodales stellus</span>
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </label>
+
+      <label for="s5" id="slide5">
+        <div class="card">
+          <div class="image">
+            <img src="img/Anuj Bhaiya.jpg" alt="">
+            <div class="dots">
+              <div class="dot1"></div>
+              <div class="dot2"></div>
+              <div class="dot3"></div>
+            </div>
+          </div>
+          <div class="infos">
+            <span class="name">Off-White Air Jordan</span>
+            <span class="lorem">Lorem ipsum sit amet, sit amet elit. Aenean vel velit ansd . Nullam
+              lorem. Nulla eu
+              sodales stellus</span>
+          </div>
+          <a href="/contact" class="btn-contact">details</a>
+          <div class="socials">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </label>
     </div>
-  </li>
-</ul>
-  </div>
-  <section class="home-section">
-    <div class="home-content">
-      <i class='bx bx-menu' ></i>
-      <span class="text">Drop Down Sidebar</span>
     </div>
-  </section>
-  <script>
-  let arrow = document.querySelectorAll(".arrow");
-  for (var i = 0; i < arrow.length; i++) {
-    arrow[i].addEventListener("click", (e)=>{
-   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-   arrowParent.classList.toggle("showMenu");
-    });
-  }
-  let sidebar = document.querySelector(".sidebar");
-  let sidebarBtn = document.querySelector(".bx-menu");
-  console.log(sidebarBtn);
-  sidebarBtn.addEventListener("click", ()=>{
-    sidebar.classList.toggle("close");
-  });
-  </script>
+
+<!-- COMPUTER Networks      id = CN                         -->
+
+  
+</div>
+
 </body>
+
 </html>

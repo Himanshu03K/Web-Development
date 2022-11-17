@@ -151,10 +151,11 @@ html{
     width: 100vw;
     height: 100vh;
     /* background-color: #37373b; */
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 .user-form .modalForm{
     width: 400px;
@@ -169,11 +170,11 @@ html{
     position: absolute;
 }
 
-.user-form .modalForm #cross-btn{
+#cross-btn{
     font-size: 30px;
     position: absolute;
-    right: 10px;
-    top: 3px;
+    right: 20px;
+    top: 10px;
     cursor: pointer;    
 }
 
@@ -412,21 +413,21 @@ html{
     }
 }
 
-.card{
+.card-section .container .card{
     width: 100%;
     height: 100%;
     position: relative;
     border: none;
 }
 
-.card .front,.back{
+.card-section .container .card .front,.back{
     border-radius: 15px;
     width: 100%;
     height: 100%;
     box-shadow: 0 0 5px 2px rgba(50,50,50,.3);
     
 }
-.card .front{
+.card-section .container .card .front{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -445,17 +446,17 @@ html{
         height: 100%;
     }
 }
-.card .front img{
+.card-section .container .card .front img{
     opacity: 0.8;
 }
-.card .front h3{
+.card-section .container .card .front h3{
     position: absolute;
     bottom: 20px;
     font-weight: 1000;
     font-size: 2rem;
     /* color: yellow; */
 }
-.card .back{
+.card-section .container .card .back{
     position: absolute;
     background: linear-gradient(to right, #0f78a5, #297b94, #06242e);
     display: none;
@@ -465,23 +466,26 @@ html{
     padding: 5px;
 }
 
-.card .back h3{
+.card-section .container .card .back h3{
     color: var(--main-color);
 }
 
-.card .back p{
+.card-section .container .card .back p{
     font-size: 1.5rem;
     color: white;
 }
 
-.container .card .back .btn{
+.card-section .container .card .back .btn{
     background-color: rgb(252, 246, 246);
-    margin: 0 30px 0 30px;
-    padding: 0.3 2rem;
-    font-size: small;
+    margin: 0 50px 0 50px;
+    padding: 0.9rem 0.6rem;
+    font-size: 15px;
+    color: blue;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
-.container:hover .card .back .btn a{
+.card-section .container:hover .card .back .btn a{
     color: blue;
     font-weight: bolder;
 }

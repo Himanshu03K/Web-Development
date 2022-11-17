@@ -26,9 +26,12 @@ let signin = document.querySelector('.sign .in');
 let signup = document.querySelector('.sign .up');
 let signinForm = document.querySelector('.signIn');
 let signupForm = document.querySelector('.signUp');
+let dsa_v = document.querySelector('.dsa-v');
+let dsa_body = document.querySelector('.dsa-body');
 
 cross.addEventListener('click',()=>{
     userform.style.display = 'none';
+    dsa_body.style.display = 'none';
 })
 
 signin.addEventListener('click',()=>{
@@ -45,3 +48,6 @@ signup.addEventListener('click',()=>{
     userform.classList.remove("cross");
 })
 
+dsa_v.addEventListener('click', () => {
+    dsa_body.style.display = 'block';
+})

@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="../css/resourses.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../Himanshu/style.css">
 </head>
 <body>
     <header class="header">
@@ -44,7 +51,7 @@
         <h2 class="card-section">Resources</h2>
         <section class="card-section">
             
-            <div class="container">
+            <<div class="container">
                 <div class="card">
                     <div class="front">
                         <div class="img">
@@ -58,13 +65,14 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1cmSWUeoUhS_FZ-bgi1ytXO0P40LZ66lR?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('dsa')"> 
                             Videos
                         </div>
+                        
                     </div>
                 </div>
             </div>
-
+    
             <div class="container">
                 <div class="card">
                     <div class="front">
@@ -79,13 +87,13 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/10kIB_hxW9ydIZZtuyTk9PQdLly-Lr5Z4?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('discrete')"> 
                             Videos
                         </div>
                     </div>
                 </div>
             </div>
-
+    
             <div class="container">
                 <div class="card">
                     <div class="front">
@@ -100,13 +108,13 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1QPeog-qdTySEwKkXAG0bIwrtpVslcGW-?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('microprocessor')"> 
                             Videos
                         </div>
                     </div>
                 </div>
             </div>
-
+    
             <div class="container">
                 <div class="card">
                     <div class="front">
@@ -121,7 +129,7 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1ypcLTIOhxW0nVGwNPc2uh5oSZBgHM54x?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('dbms')"> 
                             Videos
                         </div>
                     </div>
@@ -142,7 +150,7 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1xfYn5nzV_LUFdE-NMqxyj7_eGJ99AV-u?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('cn')"> 
                             Videos
                         </div>
                     </div>
@@ -163,7 +171,7 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1M0oPvG32WCjL5JBhh_AnlA2EZ0BrRRV2?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('co')"> 
                             Videos
                         </div>
                     </div>
@@ -184,7 +192,7 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1vP-hYKN-52C_-0oeqDISkElJ3q70LKDq?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('java')"> 
                             Videos
                         </div>
                     </div>
@@ -205,7 +213,7 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1H_WyfaJ34pyws6p4us0gXEOLLEOG1rV2?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('os')"> 
                             Videos
                         </div>
                     </div>
@@ -226,7 +234,7 @@
                         <div class="btn"> 
                             <a href="https://drive.google.com/drive/folders/1n8-LdBEOj7yhXTqJKZRn61Z1VVONaz7p?usp=share_link" target="_blank">Learn More</a>
                         </div>
-                        <div class="btn"> 
+                        <div class="btn" onclick="load('se')"> 
                             Videos
                         </div>
                     </div>
@@ -283,5 +291,262 @@
         </div>
     </footer>
 
+    <div class="body dsa">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('dsa')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="body discrete">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('discrete')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="body microprocessor">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('microprocessor')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="body cn">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('cn')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="body co">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('co')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="body java">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('java')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="body os">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('os')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="body se">
+        <section class="videos">
+            <div class="fas fa-close v-cross-btn" onclick="closed('se')"></div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="swiper-slide card">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="./Himanshu/img/Anuj Bhaiya.jpg" alt="">
+                            </div>
+    
+                            <div class="name-profession">
+                                <span class="name">Anuj Bhaiya</span>
+                            </div>
+    
+                            <div class="button">
+                                <button class="hireMe">Get Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><h4>2</h4></div>
+                <div class="item"><h4>3</h4></div>
+                <div class="item"><h4>4</h4></div>
+                <div class="item"><h4>5</h4></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            dots:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    </script>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1px 7%;
+    padding:10px 7%;
     border-bottom: var(--border);
     position: fixed;
     top:0; left: 0; right: 0;

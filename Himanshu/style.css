@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.dsa-body {
+.body {
     position: fixed;
     top: 18%;
     left: 10%;
@@ -18,20 +18,21 @@
     display: none;
 }
 
-.dsa-body .dsa {
+.body .videos {
     position: relative;
     height: 450px;
-    width: 1075px;
+    /* width: 1075px; */
     display: flex;
     align-items: center;
+    /* display: none; */
     z-index: 9999;
 }
 
-.dsa-body .dsa .swiper {
+.body .videos .swiper {
     width: 950px;
 }
 
-.dsa-body .dsa .container .content .card {
+.body .videos .container .content .card {
     position: relative;
     height: 360px;
     background: #fff;
@@ -40,7 +41,7 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.dsa-body .dsa .container .content .card::before {
+.body .videos .container .content .card::before {
     content: "";
     position: absolute;
     height: 40%;
@@ -49,7 +50,7 @@
     border-radius: 20px 20px 0 0;
 }
 
-.dsa-body .dsa .container .content .card .card-content {
+.body .videos .container .content .card .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,7 +59,7 @@
     z-index: 100;
 }
 
-.dsa-body .dsa .container .content .card .image {
+.body .videos .container .content .card .image {
     height: 140px;
     width: 140px;
     border-radius: 50%;
@@ -66,7 +67,7 @@
     background: #7d2ae8;
 }
 
-.dsa-body .dsa .container .content .card .image img {
+.body .videos .container .content .card .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -74,26 +75,26 @@
     border: 3px solid #fff;
 }
 
-.dsa-body .dsa .container .content .card .name-profession {
+.body .videos .container .content .card .name-profession {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
 }
 
-.dsa-body .dsa .container .content .card .name-profession .name {
+.body .videos .container .content .card .name-profession .name {
     font-size: 20px;
     font-weight: 600;
 }
 
-.dsa-body .dsa .container .content .card .button {
+.body .videos .container .content .card .button {
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-.dsa-body .dsa .container .content .card .button button {
+.body .videos .container .content .card .button button {
     background: #7d2ae8;
     outline: none;
     border: none;
@@ -105,15 +106,15 @@
     cursor: pointer;
 }
 
-.dsa-body .dsa .container .content .card .button button:hover {
+.body .videos .container .content .card .button button:hover {
     background: #6616d0;
 }
 
-.dsa-body .dsa .swiper-pagination {
+.body .videos .swiper-pagination {
     position: absolute;
 }
 
-.dsa-body .dsa .swiper-pagination-bullet {
+.body .videos .swiper-pagination-bullet {
     height: 7px;
     width: 26px;
     border-radius: 25px;
@@ -131,4 +132,12 @@
 .swiper-button-prev:hover {
     opacity: 1;
     color: #7d2ae8;
+}
+
+.v-cross-btn{
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;    
 }

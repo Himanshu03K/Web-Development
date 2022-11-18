@@ -147,15 +147,16 @@ html{
     transition: ease-in-out 0.5s;
 }
 
-.user-form{
+/* .user-form{
     width: 100vw;
     height: 100vh;
-    /* background-color: #37373b; */
+    background-color: #37373b;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    display: none;
 }
 .user-form .modalForm{
     width: 400px;
@@ -184,7 +185,7 @@ html{
 }
 
 .user-form .modalForm .signIn{
-    display: block;
+    display: none;
 }
 
 
@@ -213,7 +214,7 @@ html{
     margin: 1em 0;
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px , rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
+} */
 
 .home{
     min-height: 100vh;
@@ -454,7 +455,7 @@ html{
     bottom: 20px;
     font-weight: 1000;
     font-size: 2rem;
-    /* color: yellow; */
+    color: rgb(255, 0, 0);
 }
 .card-section .container .card .back{
     position: absolute;
@@ -463,7 +464,7 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    padding: 5px;
+    /* padding: 2px 15px; */
 }
 
 .card-section .container .card .back h3{
@@ -471,7 +472,7 @@ html{
 }
 
 .card-section .container .card .back p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
 }
 
@@ -519,7 +520,7 @@ html{
     border-radius: 50%;
     box-shadow: 0 0 22px #3336;
     transition: .6s;
-    margin: 0 15px;
+    margin: 18px 15px;
   }
   .profile-card:hover{
     border-radius: 10px;
@@ -530,10 +531,10 @@ html{
     width: 100%;
     height: 100%;
     transition: .6s;
-    z-index: 99;
+    /* z-index: 99; */
   }
   .profile-card:hover .img{
-    transform: translateY(-60px);
+    transform: translateY(-50px);
   }
   .profile-card .img img{
     width: 100%;
@@ -554,7 +555,7 @@ html{
     opacity: 1;
   }
   .caption h3{
-    font-size: 18px;
+    font-size: 15px;
   }
   .caption p{
     font-size: 16px;
@@ -573,10 +574,10 @@ html{
 
   /* Footer Section */
   
-footer {
+/* footer {
     position: fixed;
     bottom: 0;
-}
+} */
 
 @media (max-height:800px) {
     footer {

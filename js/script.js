@@ -20,34 +20,78 @@ loadMoreBtn.onclick = () =>{
     loadMoreBtn = window.open(url,"_blank");
 }
 
-let cross = document.querySelector('#cross-btn');
-let userform = document.querySelector('.user-form');
-let signin = document.querySelector('.sign .in');
-let signup = document.querySelector('.sign .up');
-let signinForm = document.querySelector('.signIn');
-let signupForm = document.querySelector('.signUp');
+// let cross = document.querySelector('#cross-btn');
+// let userform = document.querySelector('.user-form');
+// let signin = document.querySelector('.sign .in');
+// let signup = document.querySelector('.sign .up');
+// let signinForm = document.querySelector('.signIn');
+// let signupForm = document.querySelector('.signUp');
+
+let dsa_cross = document.querySelector('#dsa');
+let body = document.querySelector('.body');
 let dsa_v = document.querySelector('.dsa-v');
-let dsa_body = document.querySelector('.dsa-body');
+let dsa = document.querySelector('.dsa');
 
-cross.addEventListener('click',()=>{
-    userform.style.display = 'none';
-    dsa_body.style.display = 'none';
-})
 
-signin.addEventListener('click',()=>{
-    userform.style.display = 'flex';
-    signinForm.style.display = 'block';
-    signupForm.style.display = 'none';
-    userform.classList.remove("cross");
-})
+// cross.addEventListener('click',()=>{
+//     userform.style.display = 'none';
+// })
 
-signup.addEventListener('click',()=>{
-    userform.style.display = 'flex';
-    signupForm.style.display = 'block';
-    signinForm.style.display = 'none';
-    userform.classList.remove("cross");
-})
+// signin.addEventListener('click',()=>{
+//     userform.style.display = 'flex';
+//     signinForm.style.display = 'block';
+//     signupForm.style.display = 'none';
+//     userform.classList.remove("cross");
+// })
+
+// signup.addEventListener('click',()=>{
+//     userform.style.display = 'flex';
+//     signupForm.style.display = 'block';
+//     signinForm.style.display = 'none';
+//     userform.classList.remove("cross");
+// })
 
 dsa_v.addEventListener('click', () => {
-    dsa_body.style.display = 'block';
+    dsa.style.display = 'block';
 })
+
+dsa_cross.addEventListener('click',()=>{
+    dsa.style.display = 'none';
+})
+
+let discrete_cross = document.querySelector('#discrete');
+let discrete_v = document.querySelector('.discrete-v');
+let discrete = document.querySelector('.discrete');
+
+discrete_v.addEventListener('click', () => {
+    discrete.style.display = 'block';
+})
+
+discrete_cross.addEventListener('click',()=>{
+    discrete.style.display = 'none';
+})
+
+let microprocessor_cross = document.querySelector('#microprocessor');
+let microprocessor_v = document.querySelector('.microprocessor-v');
+let microprocessor = document.querySelector('.microprocessor');
+
+microprocessor_v.addEventListener('click', () => {
+    microprocessor.style.display = 'block';
+})
+
+microprocessor_cross.addEventListener('click',()=>{
+    microprocessor.style.display = 'none';
+})
+
+let dbms_cross = document.querySelector('#dbms');
+let dbms_v = document.querySelector('.dbms-v');
+let dbms = document.querySelector('.dbms');
+
+dbms_v.addEventListener('click', () => {
+    dbms.style.display = 'block';
+})
+
+dbms_cross.addEventListener('click',()=>{
+    dbms.style.display = 'none';
+})
+

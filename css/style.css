@@ -41,7 +41,6 @@ html{
 .btn:hover{
     background-color: rgb(250, 244, 244);
     color: var(--main-color);
-    font-weight: bolder;
     transition: ease-in-out 0.5s;
 }
 
@@ -57,8 +56,14 @@ html{
     z-index: 1000;
 }
 
-.header .logo img{
-    height: 4rem;
+.header .logo h3 {
+    color: #ffffff;
+    font: normal 33px 'Cookie', cursive;
+    margin: 0;
+}
+
+.header .logo h3 span {
+    color: #e0ac1c;
 }
 
 .header .navbar a{
@@ -363,7 +368,19 @@ html{
     }
 }
 
+/* Heading */
+#heading{
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
 /* RESOURCES SECTION */
+.resourse div h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
 .card-section{
     /* background-color: #212124; */
     display: flex;
@@ -406,7 +423,7 @@ html{
 @keyframes back {
     0%{
         opacity: 0;
-        transform: translateY(100%);
+        /* transform: translateY(50%); */
     }
     100%{
         opacity: 1;
@@ -416,11 +433,13 @@ html{
 
 .card-section .container .card{
     width: 100%;
-    height: 100%;
+    height: 90%;
     position: relative;
     border: none;
 }
-
+.card-section .container h2{
+    text-align: center;
+}
 .card-section .container .card .front,.back{
     border-radius: 15px;
     width: 100%;
@@ -464,7 +483,6 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    /* padding: 2px 15px; */
 }
 
 .card-section .container .card .back h3{
@@ -494,7 +512,24 @@ html{
 #load-more-btn{
     margin: auto;
     width: 200px;
-    padding: 10px;
+    padding:.9rem 1rem;
+    font-size: 1.7rem;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+#load-more-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+#load-more-btn:hover{
+    background-color: rgb(250, 244, 244);
+}
+#load-more-btn:hover a{
+    background-color: rgb(250, 244, 244);
+    color: var(--main-color);
+    transition: ease-in-out 0.5s;
 }
 
 /* Our Team */
@@ -838,5 +873,33 @@ html{
     .card-section .container{
         width: 250px;
         height: 300px;
+    }
+
+    .header .logo h3 {
+        color: #ffffff;
+        font: normal 18px 'Cookie', cursive;
+        margin: 0;
+    }
+    
+    .header .logo h3 span {
+        color: #e0ac1c;
+    }
+
+    .footer-distributed{
+        padding: 10px;
+    }
+    .footer-distributed h3 {
+        color: #ffffff;
+        font: normal 22px 'Cookie', cursive;
+        margin: 0;
+    }
+    
+    
+    .footer-distributed h3 span {
+        color: #e0ac1c;
+    }
+
+    .footer-distributed .footer-center div p{
+        font-size: 8px;
     }
 }
